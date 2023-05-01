@@ -1,0 +1,21 @@
+name: delete-artifacts-via-regex
+description: 'Remove all artifacts from the deleted branch'
+inputs:
+  github_token:
+    description: GitHub token
+    required: false
+    default: ${{ github.token }}
+  repo:
+    description: Repository name with owner (like actions/checkout)
+    required: false
+    default: ${{ github.repository }}
+  branch:
+    description: Short name of the branch triggered by the delete action
+    required: false
+    default: ${{ github.event.ref }}
+  regex:
+    description: todo # TODO
+    required: false
+runs:
+  using: 'node16'
+  main: 'main.js'
