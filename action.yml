@@ -15,7 +15,7 @@ inputs:
     default: ${{ github.event.ref }}
   regex:
     description: todo # TODO
-    required: false
+    required: true
 runs:
   using: 'node16'
   main: 'main.js'
