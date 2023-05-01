@@ -1,7 +1,7 @@
 name: delete-artifacts-via-regex
 description: 'Remove all artifacts from the deleted branch'
 inputs:
-  github_token:
+  github-token:
     description: GitHub token
     required: false
     default: ${{ github.token }}

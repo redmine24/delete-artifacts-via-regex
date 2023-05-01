@@ -2,7 +2,7 @@ const core = require('@actions/core');
 const { Octokit } = require('@octokit/core');
 const { paginateRest } = require('@octokit/plugin-paginate-rest');
 
-const token = core.getInput("github_token", { required: true })
+const token = core.getInput("github-token", { required: true })
 const [owner, repo] = core.getInput("repo", { required: true }).split("/")
 const branch = core.getInput("branch", { required: true })
 const regex = core.getInput("regex", { required: true })
